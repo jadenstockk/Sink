@@ -1,10 +1,11 @@
 <template>
-  <div class="flex flex-col justify-center">
-    <HomeHero />
-    <HomeLogos />
-    <HomeFeatures />
-    <HomeStats />
-    <HomeTestimonials />
-    <HomeCta />
-  </div>
+  <div></div> <!-- optional, nothing will show since we're redirecting -->
 </template>
+
+<script setup>
+import { onMounted } from 'vue';
+
+onMounted(() => {
+  window.location.href = 'https://jadenstock.com';
+});
+</script>
